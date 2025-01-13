@@ -14,18 +14,18 @@ public class Calculator {
 
     public int div(int a, int b) {
         if (b == 0)
-            System.out.println("Error: Division by zero");
+            throw new ArithmeticException("Error: Division by zero");
         return a / b;
     }
 
     public int factorial(int n) {
-
-    int result = 1;
-    for (int i = 1; i <= n; i++) 
-        result *= i;
-    
-    return result;
-    
+        if (n < 0) {
+            throw new IllegalArgumentException("Error: Factorial of a negative number is undefined");
+        }
+        int result = 1;
+        for (int i = 1; i <= n; i++) 
+            result *= i;
+        return result;
     }
 
 }
