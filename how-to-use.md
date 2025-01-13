@@ -8,6 +8,7 @@ A simple Java class for basic arithmetic operations.
 - **`sub(int a, int b)`**: Returns the difference between `a` and `b`.
 - **`mul(int a, int b)`**: Returns the product of `a` and `b`.
 - **`div(int a, int b)`**: Returns the quotient of `a` and `b`. Prints an error message if `b` is 0.
+- **`factorial(int n)`**: Returns the factorial of `n`.
 
 ## Usage
 
